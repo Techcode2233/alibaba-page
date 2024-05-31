@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/font/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "W02ArtHouse";
+  src: url("/font/W02ArtHouse.ttf");
+}
+
+@font-face {
+    font-family: 'W23Art House';
+    src: url('/fonts/W23ArtHouse.ttf');
+}
+
+
+/* 
+.loading {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.loading div {
+  position: absolute;
+  background: #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: loading 1.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.loading div:nth-child(2) {
+  animation-delay: -.7s;
+}
+@keyframes loading {
+  0% {
+    top: 28px;
+    left: 28px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -1px;
+    left: -1px;
+    width: 58px;
+    height: 58px;
+    opacity: 0;
+  }
+} */
+
+
+body{
+  background-color: rgba(241, 236, 255, 1);
+}
+
+.green{
+  background-color: rgba(0, 180, 0, 1);
+}
+
+.red{
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.yellow{
+  background-color: rgba(255, 168, 0, 1);
+}
+
+.blue{
+   background-color: rgba(51, 0, 178, 1);
+} 
+
+.mmFont{
+  font-family: "W02ArtHouse";
+}
