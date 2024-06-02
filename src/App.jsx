@@ -3,6 +3,10 @@ import './index.css'
 import Logo from './assets/logo-web.png'
 import Master from './assets/Master.png';
 import Senior from './assets/Senior.png'
+import Agent from './assets/Agent.png'
+import User from './assets/User.png'
+
+
 import NexYelloLogo from './assets/img/NEX Yellow Logo.png'
 import NexRedLogo from './assets/img/NEX red Logo.png'
 import NexBlueLogo from './assets/img/NEX Blue Logo.png'
@@ -10,12 +14,6 @@ import Landscape from "./assets/img/Landscape Mobile.png"
 import View from "./assets/ScreenShot 1.png"
 import View2 from "./assets/ScreenShot 2.png"
 
-
-const Loading = () =>
-  <div Name="loading">
-    <div></div>
-    <div></div>
-  </div>
 
 function App() {
   return (
@@ -29,54 +27,55 @@ function App() {
         </div>
       </header>
       <div className="wrapper">
-        <div className="flex  mt-14">
-          <div className="flex flex-col  mt-16">
-            <div>
-              <p class="xl:text-5xl lg:text-5xl md:text-2xl sm:text-base font-bold">Welcome to
-                <span class=" text-[#FFA200] ml-2">Alibaba
-                  Thai Lottery</span> </p>
-              <p
-                class="mt-6 leading-[80px] xl:text-4xl lg:text-4xl md:text-2xl sm:text-base">
-                Alibaba အေးဂျင့် နှင့် ယူဇာ Application တို့ကို ထောင်းလော့ဆွဲရန်
-              </p>
-            </div>
-            <div className='flex xl:flex-col sm:flex-row mt-8 gap-5'>
-              <div className='flex xl:flex-row sm:flex-col'>
-                <div className="flex-grow ml-4">
-                  <button type="button" class="text-white bg-[#FF0000] flex items-center justify-center sm:w-[180px] md:w-[313px] lg:w-[313px] xl:w-[313px] h-12  rounded-lg">
+        <div className="grid xl:grid-cols-2 sm:grid-cols-1 xl:just sm:justify-items-center mt-14">
+          <div className=" xl:justify-items-start sm:justify-items-center mt-16">
+            <p class="xl:text-5xl lg:text-5xl md:text-2xl sm:text-base font-bold leading-[80px]">Welcome to
+              <span class=" text-[#FFA200] ml-2">Alibaba
+                <br></br> Thai Lottery</span>
+            </p>
+            <p
+              class="mt-6 leading-[80px] xl:text-4xl lg:text-4xl md:text-2xl sm:text-base">
+              Alibaba အေးဂျင့် နှင့် ယူဇာ Application တို့ကို ထောင်းလော့ဆွဲရန်
+            </p>
+            <div className='grid xl:grid-cols-2 sm:grid-cols-1 mt-8 xl:justify-items-start sm:justify-items-center gap-5'>
+
+              <div className="">
+                <a href={"https://nexplus.sgp1.digitaloceanspaces.com/alibaba/Senior.apk"} target='_blank'>
+                  <button type="button" class="text-white bg-[#FF0000] flex items-center justify-center p-6 w-full h-14  rounded-lg">
                     <img src={Senior} width={"50px"} height={"50px"} className="mr-6" />
                     Senior App Download
                   </button>
-
-                </div>
-
-                <div className="flex-grow ml-4">
-                  <button type="button" class="text-white bg-[#FFD700] flex items-center justify-center sm:w-[180px] md:w-[313px] lg:w-[313px] xl:w-[313px] h-12  rounded-lg">
+                </a>
+              </div>
+              <div>
+                <a href={"https://nexplus.sgp1.digitaloceanspaces.com/alibaba/Master.apk"} target='_blank'>
+                  <button type="button" class="text-white bg-[#FFD700] flex items-center justify-center p-6 w-full h-14  rounded-lg">
                     <img src={Master} width={"50px"} height={"50px"} className="mr-6" />
                     Master App Download
                   </button>
-
-                </div>
-
-
+                </a>
               </div>
 
-              <div className='flex xl:flex-row sm:flex-col'>
-                <div className="flex-grow ml-4">
-                  <button type="button" class="text-white bg-[#FF0000] flex items-center justify-center sm:w-[180px] md:w-[313px] lg:w-[313px] xl:w-[313px] h-12  rounded-lg">
-                    <img src={Senior} width={"50px"} height={"50px"} className="mr-6" />
+
+
+
+              <div>
+                <a href={"https://nexplus.sgp1.digitaloceanspaces.com/alibaba/Agent.apk"} target='_blank'>
+                  <button type="button" class="text-white bg-[#016233] flex items-center justify-center p-6 w-full h-14 rounded-lg">
+                    <img src={Agent} width={"50px"} height={"50px"} className="mr-6" />
                     Agent App Download
                   </button>
+                </a>
+              </div>
 
-                </div>
-
-                <div className="flex-grow ml-4">
-                  <button type="button" class="text-white bg-[#FFD700] flex items-center justify-center sm:w-[180px] md:w-[313px] lg:w-[313px] xl:w-[313px] h-12  rounded-lg">
-                    <img src={Master} width={"50px"} height={"50px"} className="mr-6" />
+              <div>
+                <a href={"https://nexplus.sgp1.digitaloceanspaces.com/alibaba/User.apk"} target='_blank'>
+                  <button type="button" class="text-white bg-[#251D59] flex items-center justify-center p-7 w-full h-14  rounded-lg">
+                    <img src={User} width={"50px"} height={"50px"} className="mr-6" />
                     User App Download
                   </button>
 
-                </div>
+                </a>
 
 
               </div>
@@ -86,97 +85,99 @@ function App() {
           <div className="mt-4 flex items-center justify-center">
             <img src={View} width="268" />
           </div>
-
         </div>
-        <div className="flex flex-row mt-16">
-          <div className="mr-0">
-            <img src={View2} width="268" />
-          </div>
-          <div className="flex flex-row ml-[120px] gap-8">
-            <div className='flex flex-col'>
-              <svg width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+      </div>
+      <div className="flex flex-row mt-14">
+        <div className="mr-0 sm:hidden xl:flex">
+          <img src={View2} />
+        </div>
+        <div className='bg-white rounded-lg'>
+          <div className="grid xl:grid-cols-4 sm:grid-cols-2 gap-4  my-20 mx-8">
+            <div className='flex flex-col items-center'>
+              <svg className='xl:w-[137px] xl:h-[137px] sm:w-[70px] sm:h-[70px]' viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="68.5" cy="68.5" r="68.5" fill="#CACFFF" />
                 <path d="M101.017 58.8008L94.9834 52.7674C94.4966 52.2872 93.8476 52.0068 93.1642 51.9815C92.4809 51.9561 91.8129 52.1878 91.292 52.6307C90.4877 53.3153 89.4555 53.6727 88.4001 53.6322C87.3447 53.5917 86.343 53.1562 85.5935 52.4119C84.8497 51.6625 84.4144 50.6611 84.3739 49.606C84.3333 48.5509 84.6906 47.5191 85.3748 46.7148C85.8177 46.1939 86.0493 45.5259 86.024 44.8426C85.9987 44.1593 85.7183 43.5102 85.2381 43.0234L79.1992 36.9832C78.6889 36.4738 77.9973 36.1878 77.2762 36.1878C76.5552 36.1878 75.8636 36.4738 75.3533 36.9832L65.7351 46.6C65.1414 47.196 64.6936 47.9213 64.4267 48.7191C64.3748 48.8725 64.2882 49.0119 64.1737 49.1264C64.0591 49.241 63.9198 49.3276 63.7664 49.3795C62.9682 49.6463 62.2428 50.0947 61.6472 50.6893L36.9832 75.3533C36.4738 75.8637 36.1877 76.5552 36.1877 77.2763C36.1877 77.9973 36.4738 78.6889 36.9832 79.1992L43.0234 85.2326C43.5102 85.7128 44.1592 85.9932 44.8425 86.0186C45.5259 86.0439 46.1938 85.8122 46.7148 85.3693C47.5172 84.6792 48.5507 84.3178 49.6084 84.3575C50.666 84.3972 51.6695 84.8351 52.4179 85.5835C53.1662 86.3318 53.6041 87.3354 53.6439 88.393C53.6836 89.4506 53.3221 90.4841 52.632 91.2865C52.1891 91.8075 51.9575 92.4755 51.9828 93.1588C52.0081 93.8421 52.2885 94.4912 52.7687 94.9779L58.8021 101.011C59.3125 101.521 60.004 101.807 60.7251 101.807C61.4461 101.807 62.1377 101.521 62.648 101.011L87.3121 76.3473C87.9065 75.7521 88.3548 75.0272 88.6218 74.2295C88.6736 74.0756 88.7602 73.9358 88.875 73.821C88.9898 73.7062 89.1297 73.6195 89.2836 73.5678C90.081 73.301 90.8059 72.8531 91.4013 72.2594L101.018 62.6412C101.526 62.1309 101.81 61.4404 101.81 60.7207C101.81 60.001 101.525 59.3107 101.017 58.8008ZM69.7943 54.7471C69.5912 54.9503 69.35 55.1114 69.0846 55.2214C68.8191 55.3314 68.5346 55.388 68.2473 55.388C67.96 55.388 67.6755 55.3314 67.4101 55.2214C67.1447 55.1114 66.9035 54.9503 66.7004 54.7471L65.1267 53.1734C64.7265 52.7611 64.5045 52.2079 64.5089 51.6333C64.5132 51.0587 64.7434 50.5089 65.1498 50.1026C65.5563 49.6964 66.1062 49.4664 66.6808 49.4623C67.2554 49.4582 67.8085 49.6804 68.2207 50.0809L69.7943 51.6531C69.9975 51.8563 70.1587 52.0974 70.2686 52.3629C70.3786 52.6283 70.4352 52.9128 70.4352 53.2001C70.4352 53.4874 70.3786 53.7719 70.2686 54.0373C70.1587 54.3028 69.9975 54.5439 69.7943 54.7471ZM75.8099 60.7627C75.3997 61.1726 74.8436 61.4029 74.2636 61.4029C73.6837 61.4029 73.1275 61.1726 72.7174 60.7627L71.2134 59.2588C70.8032 58.8485 70.5727 58.292 70.5727 57.7118C70.5727 57.1316 70.8032 56.5751 71.2134 56.1648C71.6237 55.7546 72.1802 55.5241 72.7604 55.5241C73.3406 55.5241 73.8971 55.7546 74.3074 56.1648L75.8113 57.6688C76.0152 57.8719 76.177 58.1132 76.2874 58.379C76.3979 58.6448 76.4548 58.9297 76.4549 59.2175C76.455 59.5053 76.3984 59.7903 76.2882 60.0561C76.178 60.322 76.0164 60.5635 75.8127 60.7668L75.8099 60.7627ZM81.8256 66.7783C81.6224 66.9815 81.3812 67.1427 81.1158 67.2526C80.8504 67.3626 80.5659 67.4192 80.2786 67.4192C79.9913 67.4192 79.7068 67.3626 79.4413 67.2526C79.1759 67.1427 78.9347 66.9815 78.7316 66.7783L77.2277 65.2744C76.8275 64.8621 76.6055 64.3089 76.6098 63.7343C76.6142 63.1597 76.8444 62.6098 77.2508 62.2036C77.6572 61.7974 78.2072 61.5674 78.7818 61.5633C79.3564 61.5592 79.9095 61.7814 80.3216 62.1818L81.8256 63.6857C82.03 63.8885 82.1924 64.1297 82.3034 64.3954C82.4145 64.6611 82.472 64.9461 82.4726 65.234C82.4732 65.522 82.417 65.8072 82.3071 66.0734C82.1973 66.3396 82.0359 66.5815 81.8324 66.7852L81.8256 66.7783ZM87.9 72.8678C87.6968 73.071 87.4557 73.2321 87.1902 73.3421C86.9248 73.4521 86.6403 73.5087 86.353 73.5087C86.0657 73.5087 85.7812 73.4521 85.5158 73.3421C85.2503 73.2321 85.0092 73.071 84.806 72.8678L83.242 71.2955C83.0345 71.093 82.8694 70.8512 82.7562 70.5843C82.643 70.3174 82.584 70.0307 82.5826 69.7407C82.5813 69.4508 82.6375 69.1635 82.7481 68.8955C82.8588 68.6276 83.0216 68.3842 83.2271 68.1797C83.4326 67.9752 83.6767 67.8136 83.9452 67.7043C84.2137 67.595 84.5013 67.5401 84.7912 67.5429C85.0811 67.5457 85.3676 67.6061 85.6339 67.7206C85.9003 67.8351 86.1412 68.0013 86.3427 68.2098L87.9082 69.7807C88.1113 69.9839 88.2723 70.2251 88.3822 70.4906C88.492 70.7561 88.5485 71.0406 88.5484 71.3279C88.5482 71.6152 88.4915 71.8997 88.3814 72.1651C88.2714 72.4305 88.1101 72.6716 87.9068 72.8746L87.9 72.8678Z" fill="#4254FF" />
               </svg>
+
+
               <div className='mt-6'>
-                <p className='w-[166px] h-[68px] text-center text-[20px]'>
+                <p className='xl:w-[166px]xl: h-[68px] sm:w-auto sm:h-auto text-center xl:text-xl sm:text-base'>
                   အီလက်ထရောနစ်
                   လက်မှတ်
                 </p>
 
               </div>
-              <div className='mt-2'>
-                <p className='w-[153px] h-[128px] text-center text-[16px]'>
+              <div className='xl:mt-6 sm:mt-2'>
+                <p className='xl:w-[153px] xl:h-[128px] sm:w-auto sm:h-auto text-center xl:text-base sm:text-[13px]'>
                   လက်မှတ် ပျက်စီး၊ ပျောက်ဆုံး၊ ထိန်းသိမ်းခြင်း ကင်းဝေးခြင်း။
                 </p>
               </div>
 
             </div>
-            <div className='flex flex-col'>
-              <svg width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className='flex flex-col items-center'>
+              <svg className='xl:w-[137px] xl:h-[137px] sm:w-[70px] sm:h-[70px]' viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="68.5" cy="68.5" r="68.5" fill="#CACFFF" />
                 <path d="M98.0636 65.4043L85.7589 76.0219L89.5078 91.9004C89.7146 92.7624 89.6613 93.6663 89.3547 94.498C89.0481 95.3297 88.5018 96.0519 87.7849 96.5733C87.0681 97.0947 86.2127 97.392 85.327 97.4275C84.4413 97.4631 83.5649 97.2353 82.8085 96.773L69 88.2746L55.1832 96.773C54.4269 97.2327 53.5516 97.4583 52.6674 97.4214C51.7832 97.3845 50.9296 97.0869 50.2143 96.5659C49.4989 96.045 48.9536 95.324 48.6472 94.4938C48.3407 93.6635 48.2868 92.7612 48.4921 91.9004L52.2546 76.0219L39.95 65.4043C39.2808 64.826 38.7969 64.0634 38.5587 63.2117C38.3204 62.3601 38.3383 61.4571 38.6101 60.6155C38.882 59.7739 39.3958 59.0311 40.0873 58.4798C40.7788 57.9285 41.6174 57.5932 42.4984 57.5156L58.6312 56.2141L64.8546 41.1531C65.1915 40.3323 65.7648 39.6302 66.5017 39.1361C67.2387 38.6419 68.1059 38.3781 68.9931 38.3781C69.8804 38.3781 70.7476 38.6419 71.4845 39.1361C72.2214 39.6302 72.7947 40.3323 73.1316 41.1531L79.3523 56.2141L95.4851 57.5156C96.3678 57.5903 97.2089 57.9238 97.9029 58.4743C98.5969 59.0249 99.1131 59.768 99.3866 60.6105C99.6602 61.4531 99.679 62.3577 99.4407 63.2109C99.2025 64.0641 98.7177 64.8281 98.0472 65.407L98.0636 65.4043Z" fill="#FFE600" />
               </svg>
 
               <div className='mt-6'>
-                <p className='w-[166px] h-[68px] text-center text-[20px]'>
+                <p className='xl:w-[166px] xl:h-[68px] sm:w-auto sm:h-auto text-center  xl:text-xl sm:text-base'>
                   စိတ်ကြိုက်နံပါတ်
                 </p>
               </div>
-              <div className='mt-2'>
-                <p className='w-[153px] h-[128px] text-center text-[16px]'>
+              <div className='sm:mt-8 mt-2'>
+                <p className='xl:w-[153px] xl:h-[128px] sm:w-auto sm:h-auto text-center xl:text-base sm:text-[13px]'>
                   သင့်ကံကြမ္မာကို သင်ရွေးချယ်နိုင်ခြင်း။
                 </p>
               </div>
             </div>
-            <div className='flex flex-col'>
+            <div className='flex flex-col items-center'>
 
-              <svg width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className='xl:w-[137px] xl:h-[137px] sm:w-[70px] sm:h-[70px]' viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="68.5" cy="68.5" r="68.5" fill="#CACFFF" />
                 <path d="M94.8766 48.7292C93.8619 47.3267 92.4311 46.2797 90.7875 45.7367L76.7846 41.07C71.7066 39.4226 66.2379 39.4226 61.16 41.07L47.16 45.7367C45.5238 46.2835 44.1006 47.3302 43.0912 48.7292C42.074 50.1352 41.5268 51.8266 41.5279 53.5621V68.6062C41.5071 72.8121 42.5602 76.9537 44.5876 80.6388C46.6149 84.3239 49.5493 87.4306 53.1129 89.6646L64.6454 96.9154C65.9542 97.7337 67.4667 98.1675 69.0102 98.1675C70.5537 98.1675 72.0662 97.7337 73.375 96.9154L84.9075 89.6675C88.4467 87.4422 91.3636 84.3554 93.3851 80.6959C95.4066 77.0365 96.4667 72.924 96.4662 68.7433V53.6992C96.4881 51.9137 95.9322 50.1694 94.8766 48.7292ZM71.73 69.98V76.5979C71.73 77.3262 71.4407 78.0247 70.9257 78.5397C70.4107 79.0546 69.7122 79.344 68.9839 79.344C68.2556 79.344 67.5572 79.0546 67.0422 78.5397C66.5272 78.0247 66.2379 77.3262 66.2379 76.5979V69.98C64.2763 69.3278 62.6109 67.9986 61.5399 66.2306C60.4688 64.4625 60.0621 62.3709 60.3925 60.3303C60.7228 58.2897 61.7687 56.4333 63.3429 55.0935C64.9171 53.7537 66.9168 53.0179 68.9839 53.0179C71.0511 53.0179 73.0508 53.7537 74.625 55.0935C76.1992 56.4333 77.245 58.2897 77.5754 60.3303C77.9058 62.3709 77.499 64.4625 76.428 66.2306C75.3569 67.9986 73.6916 69.3278 71.73 69.98Z" fill="#0583DE" />
                 <path d="M72.2112 61.7142C72.2112 62.5659 71.8729 63.3826 71.2706 63.9849C70.6684 64.5871 69.8516 64.9254 68.9999 64.9254C68.1483 64.9254 67.3315 64.5871 66.7292 63.9849C66.127 63.3826 65.7887 62.5659 65.7887 61.7142C65.7887 60.8625 66.127 60.0457 66.7292 59.4435C67.3315 58.8413 68.1483 58.5029 68.9999 58.5029C69.8516 58.5029 70.6684 58.8413 71.2706 59.4435C71.8729 60.0457 72.2112 60.8625 72.2112 61.7142Z" fill="#0583DE" />
               </svg>
 
               <div className='mt-6'>
-                <p className='w-[166px] h-[68px] text-center text-[20px]'>
+                <p className='xl:w-[166px] xl:h-[68px]  sm:w-auto sm:h-auto text-center xl:text-xl sm:text-base'>
                   ၁၀၀% စိတ်ချရမှု
                 </p>
               </div>
               <div className='mt-2'>
-                <p className='w-[153px] h-[128px] text-center text-[16px]'>
+                <p className='xl:w-[153px] xl:h-[128px] sm:w-auto sm:h-auto text-center xl:text-base sm:text-[13px]'>
                   သင်၏ အချက်အလက်နှင့် လုံခြုံရေးအား အလေးထားခြင်း။
                 </p>
 
               </div>
 
             </div>
-            <div className='flex flex-col'>
+            <div className='flex flex-col items-center'>
 
-              <svg width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className='xl:w-[137px] xl:h-[137px] sm:w-[70px] sm:h-[70px]' viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="68.5" cy="68.5" r="68.5" fill="#CACFFF" />
                 <path d="M101.083 63.1667C101.083 61.6196 100.469 60.1358 99.3747 59.0419C98.2808 57.9479 96.7971 57.3333 95.25 57.3333H76.8166L79.6166 44.0042C79.675 43.7125 79.7041 43.3917 79.7041 43.0708C79.7041 41.875 79.2083 40.7667 78.4208 39.9792L75.3291 36.9167L56.1375 56.1083C55.0583 57.1875 54.4166 58.6458 54.4166 60.25V89.4167C54.4166 90.9637 55.0312 92.4475 56.1252 93.5414C57.2191 94.6354 58.7029 95.25 60.25 95.25H86.5C88.9208 95.25 90.9916 93.7917 91.8666 91.6917L100.675 71.1292C100.937 70.4583 101.083 69.7583 101.083 69V63.1667ZM36.9166 95.25H48.5833V60.25H36.9166V95.25Z" fill="#0066FF" />
               </svg>
 
               <div className='mt-6'>
-                <p className='w-[166px] h-[68px] text-center text-[20px]'>
+                <p className='xl:w-[166px] xl:h-[68px] sm:w-auto sm:h-auto text-center xl:text-xl sm:text-base'>
                   ဆုမဲပေါက်စဉ်
                 </p>
 
               </div>
               <div className='mt-2'>
-                <p className='w-[153px] h-[128px] text-center text-[16px]'>
+                <p className='xl:w-[153px] xl:h-[128px] sm:w-auto sm:h-auto text-center xl:text-base sm:text-[13px]'>
                   လွယ်ကူ၊ မြန်ဆန်၊ မှန်ကန်သော ဆုမဲပေါက်စဉ်။
                 </p>
               </div>
 
             </div>
-
           </div>
-
         </div>
-      </div>
 
+      </div>
     </div>
+
 
 
     // </Suspense>
